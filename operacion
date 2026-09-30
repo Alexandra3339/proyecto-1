@@ -1,0 +1,15 @@
+print("--- Calculadora del Área de un Triángulo ---")
+
+try:
+    base = float(input("Introduce la base del triángulo (en cm o metros): "))
+    altura = float(input("Introduce la altura del triángulo (en cm o metros): "))
+
+    if base <= 0 or altura <= 0:
+        print("Error: La base y la altura deben ser números mayores que cero.")
+    else:
+        area = (base * altura) / 2
+
+        print(f" El área del triángulo es: {area} unidades cuadradas.")
+
+except ValueError:
+    print(" Error: Por favor, introduce solo números válidos")
